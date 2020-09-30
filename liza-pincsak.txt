@@ -1,122 +1,191 @@
 link: https://codepen.io/Pincsak/pen/JjXqRoo
 
-    1. What is Semantic HTML? 
-    Semantic HTML gives meaning to my markup.
-    2. What is HTML used for? 
-   :) HTML is used for structure.
-    3. What is an attribute and where do we put it? 
-    :)Attributes gives more information about tag to the browser.
-    4. What is the h1 tag used for? How many times should I use it on a page? 
-   :)H1 tag is used for title. It is used once per page.
-    5. Name two tags that have required attributes
-       :) 1. <a>
-        2. <input>
-    6. What do we put in the head of our HTML document? 
-    :)We put <header> in head. 
-    7. What is an id? 
-    :)We use an id when we want to anchor to a section in a webage.
-    8. What elements can I add an id to? 
-     :)id is case sensitive. There are no spaces or special characters. But, we can use dashes and underscores.
+ 1. What is Semantic HTML? 
 
-     -inline style
-     -embedded style tag in html page
-     -externally linked css file
+    Semantic HTML gives meaning to conten.
+
+    2. What is HTML used for?
+
+    HTML is used for structure of the building
+
+    3. What is an attribute and where do we put it? 
+
+    An attribute goes in the opening tah. Give more information about tag to the browser. 
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+
+    h1 tag is used for main title. It is only used once per page. 
+
+    5. Name two tags that have required attributes
+
+        1. <img> src="" is required, while alt="" is optional
+        2. <a> href
+
+    6. What do we put in the head of our HTML document? 
+
+    The header typlically has h1, nav, and possibly a div with photos and paragraph. 
+
+    7. What is an id? 
+
+    An id is used when we want to anchor to a section in html. It can only be called once. It's case sensitive with no spaces or special characters. It can have dashes and underscores. You use a # with id. 
+
+    8. What elements can I add an id to? 
+
+    Usually, you add an id to a section, but it can only be called once.  
 
     9. How many times can I use the same id on a page? 
-    :)id can only be used once on a page. 
+
+    You can use the same id ONCE. 
+
     10. What is a class? 
-   :) Class is used to introduce more specificity compared to element or universal selector.
+
+    A class is used for styling. Only use class when inheritance is not enough. You use a . with class. 
+
     11. What elements can I add a class to? 
-    :)There are multiple classes, so multiple elements you can add classes to like selection, div, p. etc.
+
+    You can add class to any element. 
+
     12. How many times can I use the same class on a page? 
-    :)You can use a class as many times as you want. But, the name will need to change if it is refering to a new element.  Not sure if they are refering to pseudo classes here?
+
+    This is the coolest part of a class. You can name multiple items in html the same class. 
+
     13. How do I get my link to open in a new tab?
-    :) You use Target="_blank" to get a link to open in a separate webpage.
+
+    You use target="_blank" after the href="" to have the link open in a new page.  
+
     14. What is the alt attribute in the image tag used for? 
-    :) The alt attribute specifies an alternate text for an area, if the image cannot be displayed.
+
+    alt="" is used to describe the image for screen readers, which are used for people who cannot see. 
+
     15. How do I reference an id?
-    :)In CSS, you reference an id by using #.
-    16. What is the difference between a section and a div
-    :)Div is for holding other boxes. Section is for the entire group of items. Section has semantic meaning. Div does not have semantic meaning. 
+
+    You reference an id, using #.
+
+    16. What is the difference between a section and a div?
+
+        1. <section> is semantic html
+        2. <div> does not give meaning to content. It is a container used to move the content around. It's great for flexbox. 
+
     17. What is CSS used for? 
-    :)It is used to describe what is written in html. CSS shows a pattern of inheritance that we can use in our code.
-    18. How to we select an element? Example - every h2 on the page
-    :)Universal Selector *
-    19. What is the difference between a class and an id? :)- Give me an example of when I might use each one
-    I would use a class to be very specific about an element
-        Ex: <div class="about">
-    I would use an id to anchor a section. 
-        Ex: <section id= "container">
+
+    CSS is used to make the house beatiful and have style. It's like the interior decorator.
+
+    18. How do we select an element? Example - every h2 on the page
+
+    You can use the universal selector *{} to call everything on the page. Otherwise, if you want to select two different elements at the same time like h2, h3{} you can use a comma. 
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+    The same class can be given to multiple different elements on a page that you want to have the same things done to it. I would use it for flexbox. I typically use class with div. 
+
+    You use id when you want to give an element a very specific name that nothing else will have. 
+
     20. How do we select classes in CSS?
-    :)We select classes with . in CSS.
+
+    We select classes using a .
+
     21. How do we select a p element with a single class of “human””?
-    :).human p{}
+
+    .class p{}
+
     22. What is a parent child selector? When would this be useful? 
-   :) Parent/child selector connotates a 'bond' between two elements. This would be useful if you're looking for a specific class inside a selector. You can be very specific with this. When an element is placed within another element, it becomes a child of that element. 
+
+    A parent child selector has to do with inheritance. A child inherits everything from a parent, but a parent doesn't inherit anything from the child. 
+
     23. How do you select all links within a div with the class of sidebar?
-universal selector .div *a{
-}
+
+    .sidebar div{}
+
     24. What is a pseudo selector?
-:)It selects elements that are in a specific state like a list. YOu many not have a set amount of elements, but you want to stlye them individually.
 
-25. What do we use the change the spacing between lines?
-line-height:1.5;
-    26. What do we use to change the spacing between letters?
-letter-spacing: 2px;
-    27. What do we use to to change everything to CAPITALS? text-transform: uppercase; lowercase? text-transform: lowercase; Capitalize? text-transform: capitalize;
-    28. How do I add a 1px border around my div that is dotted and black?
-    .div{
-        border-style: dotted;
-        border-color: black;
-        border-width: 1px;
-    }
-    29. How do I select everything on the page? 
-    I would use universal selector *
-    30. How do I write a comment in CSS?
-    You write a comment by: /*  */
-    31. How do I find out what file I am in, when I am using the command line? 
-    I would use pwd.
-    32. Using the command line - how do I see a list of files/folders in my current folder?
-    You use ls.
-    33. How do I remove a file via the command line? Why do I have to be careful with this? 
-    Rm deletes file. Rm terminates it forever. You cannot recover it.
-    34. Why should I use version control? 
-If you make a mistake, you have a previous copy before the mistake or bug. You can go back to that version and not have lost everything.
-    35. How often should I commit to github?
-    You should commit every 15-20 minutes.
-    36. What is the command we would use to push our repo up to github? 
-    git push 'liza-pincsak'(depending if it is original git push -u origin 'liza-picnsak')
-    37. Walk me through Lambda's git flow. 
-    1. Forking
-	2. Invite collaborator aka TL
-	3. Click code: https
-		a. If forked, should say name
-		b. Copy clipboard
-	5. Go to Terminal
-		a. Cd Desktop/Lambda
-		b. Git clone https:
-	6. ***Cd web36git (should say master)
-	7. Git checkout -b 'liza-pincsak'
-	8. Then open in vs code: code .
-	9. Make a change in visual studio code
-	10. Git add .
-	11. Git status
-	12. Git commit -m "message to yourself" (make sure it is "")
-	13. Git push - u origin 'liza-pincsak' (need to create branch after just use git command)
-	14. Change is in branch: click on master and go to name
-	15. Make sure my forked copy: lizapincsak
-	16. Click master
-	17. Click liza
-	18. Click create pull request
-	19. Click to liza
-	20. Base: Master compare to liza pincsak
+    A pseudo-class is used to define a special state of an element.
 
+    For example, it can be used to:
+        -Style an element when a user hovers over it
+
+    25. What do we use the change the spacing between lines?
     
+    line-height
+
+
+    26. What do we use to change the spacing between letters?
+
+    letter-spacing
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-transform: lowercase;
+
+    28. How do I add a 1px border around my div that is dotted and black?
+
+    I put a border around the body:
+    border-style: dotted;
+    border-color: black;
+    border-width: 1px;
+
+
+    29. How do I select everything on the page? 
+
+    universal selector *{}
+
+    30. How do I write a comment in CSS?
+
+    In CSS you write comments using /**/
+
+    31. How do I find out what file I am in, when I am using the command line? 
+
+    cd
+
+    32. Using the command line - how do I see a list of files/folders in my current folder? 
+
+    ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+
+    rm you need to be careful with this because it deletes everything very quickly and you cannot retrieve it
+
+    34. Why should I use version control? 
+
+
+    35. How often should I commit to github?
+
+    You should commit every 15-20 minutes. 
+
+    36. What is the command we would use to push our repo up to github? 
+
+    git add .
+    git commit -m "message"
+    git push -u origin "liza-pincsak" or just git push if done it once
+
+    37. Walk me through Lambda's git flow. 
+        1. Fork
+	    2. Invite mentor
+	    3. Click code: https (If forked, should say name)
+		4. Copy clipboard
+	    5. Terminal
+		    a. Cd Desktop/
+		    b. Git clone https...
+            c. cd into Desktop/name of project
+	    6. Git checkout -b 'liza-pincsak'
+	    7. Then open in vs code: code .
+	    8. Make a change
+        9. Git add .
+        10. Git commit -m "message to yourself" (make sure it is "")
+        11. Git push - u origin 'liza-pincsak' (need to create branch after just use git command)
+        12. Change is in branch: click on master and go to name
+	    13. Make sure my forked copy: lizapincsak
+	    16. Click master
+	    17. Click liza
+	    18. Click create pull request
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+
+    Inline elements: does not take up it's own line, so the elements will be on the same line i.e. span.
+    Block elements: has it's own line, so it will be the only thing on that line i.e. div
+
     2. What happens when an element is positioned absolutely? 
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
-    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
